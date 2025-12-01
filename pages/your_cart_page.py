@@ -6,11 +6,11 @@ class YourCartPage(BasePage):
 
     _PAGE_URL = Urls.YOUR_CART_PAGE
 
-    _CHECKOUT = "//button[@id='checkout']"
+    _CHECKOUT_BUTTON = "//button[@id='checkout']"
 
     # нажимаем кнопку Checkout
-    def chechout(self):
-        self.wait.until(EC.element_to_be_clickable(self._CHECKOUT)).click()
+    def chechout_button(self):
+        self.wait.until(EC.element_to_be_clickable(self._CHECKOUT_BUTTON)).click()
 
 
 
